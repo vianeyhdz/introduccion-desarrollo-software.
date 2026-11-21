@@ -1,0 +1,21 @@
+Inicio
+    Definir numero, digito1, digito2, digito3, digito4, invertido Como Entero
+
+    Repetir
+        Escribir "Ingresa un número entero positivo de 4 dígitos:"
+        Leer numero
+    Hasta Que numero >= 1000 Y numero <= 9999
+
+    digito4 <- numero MOD 10
+    numero <- Trunc(numero / 10)
+
+    digito3 <- numero MOD 10
+    numero <- Trunc(numero / 10)
+
+    digito2 <- numero MOD 10
+    digito1 <- Trunc(numero / 10)
+
+    invertido <- (digito4 * 1000) + (digito3 * 100) + (digito2 * 10) + digito1
+
+    Escribir "El número invertido es: ", invertido
+Fin
