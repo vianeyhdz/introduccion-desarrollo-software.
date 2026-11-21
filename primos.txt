@@ -1,0 +1,23 @@
+Inicio
+    Definir numero, contador, divisores Como Entero
+    divisores <- 0
+
+    Escribir "Ingresa un número entero positivo:"
+    Leer numero
+
+    Si numero <= 1 Entonces
+        Escribir "El número ", numero, " no es primo"
+    SiNo
+        Para contador <- 1 Hasta numero Con Paso 1 Hacer
+            Si numero MOD contador = 0 Entonces
+                divisores <- divisores + 1
+            FinSi
+        FinPara
+
+        Si divisores = 2 Entonces
+            Escribir "El número ", numero, " si es primo"
+        SiNo
+            Escribir "El número ", numero, " no es primo"
+        FinSi
+    FinSi
+Fin
